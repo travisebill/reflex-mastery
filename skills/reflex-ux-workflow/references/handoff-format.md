@@ -1,6 +1,8 @@
 # Handoff 格式
 
 > 從 ui-ux-pro-max 拿到 design 後，整理成 Reflex 實作 spec
+>
+> ⚠️ **本章節需要 `ui-ux-pro-max` skill 已安裝**。沒裝的話請看 [SKILL.md 開頭的安裝 SOP](../SKILL.md#-安裝-ui-ux-pro-max)。如果你用其他 design 工具（Figma / 手繪 / 自訂 tokens），把「ui-ux-pro-max」換成你的 design 來源即可。
 
 ---
 

@@ -1,6 +1,8 @@
 # 何時叫 ui-ux-pro-max
 
 > 主人工作流：寫 Reflex app 之前先過 design
+>
+> ⚠️ **本章節需要 `ui-ux-pro-max` skill 已安裝**。沒裝的話請看 [SKILL.md 開頭的安裝 SOP](../SKILL.md#-安裝-ui-ux-pro-max)。
 
 ---
 

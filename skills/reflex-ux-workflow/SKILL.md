@@ -11,7 +11,75 @@ description: >
 
 # Reflex UX Workflow
 
-> 與 [`ui-ux-pro-max`](https://docs.openclaw.ai) skill 協作的完整工作流
+> 與 [`ui-ux-pro-max`](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) skill 協作的完整工作流
+
+---
+
+## ⚠️ 依賴聲明
+
+本 sub-skill **部分章節依賴 `ui-ux-pro-max` skill**：
+
+| Reference | 依賴 ui-ux-pro-max？ |
+|-----------|------------------|
+| `when-to-call.md` | ✅ 必裝 |
+| `handoff-format.md` | ✅ 必裝 |
+| `design-tokens-mapping.md` | ❌ 獨立可用 |
+| `component-mapping.md` | ❌ 獨立可用 |
+| `accessibility.md` | ❌ 獨立可用 |
+
+**結論**：
+- 🅰️ **裝了 ui-ux-pro-max**（OpenClaw 主環境）— 完整工作流，5 references 全用
+- 🅱️ **沒裝**（Copilot / Cursor / 精簡模式）— 可用 3 references（token/component/a11y），跳過 when-to-call + handoff-format
+- 🅲️ **不確定** — 跑下面的「安裝 SOP」
+
+---
+
+## 📦 安裝 ui-ux-pro-max
+
+**完整工作流需要 `ui-ux-pro-max`**。安裝方法（GitHub: [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)）：
+
+### 方法 1：CLI（推薦，最通用）
+
+```bash
+# 1. 裝 CLI
+npm install -g uipro-cli
+
+# 2. 在 project 內 init（依你用的 agent 選）
+cd /path/to/your/project
+uipro init --ai claude      # Claude Code
+uipro init --ai cursor      # Cursor
+uipro init --ai copilot     # GitHub Copilot
+uipro init --ai codex       # Codex CLI
+uipro init --ai opencode    # OpenCode
+uipro init --ai all         # 一次裝全部
+```
+
+### 方法 2：Claude Code Marketplace
+
+```
+/plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill
+/plugin install ui-ux-pro-max@ui-ux-pro-max-skill
+```
+
+### 方法 3：OpenClaw / npx skills
+
+```bash
+npx skills add nextlevelbuilder/ui-ux-pro-max-skill
+```
+
+### 方法 4：手動 clone
+
+```bash
+git clone https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git
+cp -r ui-ux-pro-max-skill/skills/ui-ux-pro-max/ ~/.openclaw/skills/
+# 或對應其他 agent 的 skills 目錄
+```
+
+### 驗證裝好
+
+- 主人下：「用 ui-ux-pro-max skill 給我出個 design」
+- 若 agent 載入 skill 並開始問問題（target platform / stack / constraints）→ 成功 ✅
+- 若 agent 說「找不到 ui-ux-pro-max」→ 失敗 ❌ 回到上面重裝
 
 ---
 

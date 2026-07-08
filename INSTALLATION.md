@@ -156,3 +156,32 @@ SKILL.md 的 description 太長或太模糊。檢查：
 如果 agent 自動載入 `reflex-docs-advanced` 並提示從 `templates/reflex-starter/` 複製 → 成功 ✅
 
 如果 agent 問「什麼是 Reflex」→ 沒裝好 ❌ 回到上方故障排除
+
+---
+
+## 🤖 完整工作流需裝 `ui-ux-pro-max`
+
+`reflex-ux-workflow` sub-skill 的「理想工作流」（叫 ui-ux-pro-max 出 design → 套成 Reflex code）需要額外裝 `ui-ux-pro-max` skill。
+
+**沒裝也沒關係** — `reflex-ux-workflow` 5 個 references 中 3 個（design-tokens / component-mapping / a11y）獨立可用。
+
+**完整安裝 ui-ux-pro-max**（如要完整工作流）：
+
+```bash
+# 方法 1：CLI（推薦）
+npm install -g uipro-cli
+cd /path/to/your/project
+uipro init --ai claude  # 或 cursor / copilot / codex / opencode / all
+
+# 方法 2：Claude Code
+/plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill
+/plugin install ui-ux-pro-max@ui-ux-pro-max-skill
+
+# 方法 3：npx skills
+npx skills add nextlevelbuilder/ui-ux-pro-max-skill
+
+# 方法 4：手動 clone
+git clone https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git
+```
+
+完整文檔：https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
