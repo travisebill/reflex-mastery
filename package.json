@@ -1,0 +1,42 @@
+{
+  "name": "@travisebill/reflex-mastery",
+  "version": "0.3.0",
+  "description": "Reflex 全端 Python web 開發進階 skill suite（5 個 sub-skill + starter template + 3 個 example apps）",
+  "keywords": [
+    "reflex",
+    "python",
+    "fullstack",
+    "ai-coding",
+    "agent-skills",
+    "minimax",
+    "openai",
+    "anthropic"
+  ],
+  "homepage": "https://github.com/travisebill/reflex-mastery",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/travisebill/reflex-mastery.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "travisebill",
+    "email": "travis1897@gmail.com"
+  },
+  "skills": {
+    "directory": "skills",
+    "manifests": [
+      "skills/reflex-docs-advanced/SKILL.md",
+      "skills/reflex-deployment/SKILL.md",
+      "skills/reflex-ai-integration/SKILL.md",
+      "skills/reflex-ux-workflow/SKILL.md",
+      "skills/reflex-upgrade-monitor/SKILL.md"
+    ]
+  },
+  "agentskills": {
+    "spec": "https://agentskills.io/",
+    "version": "1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

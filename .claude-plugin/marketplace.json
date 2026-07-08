@@ -1,0 +1,49 @@
+{
+  "name": "reflex-mastery",
+  "owner": {
+    "name": "travisebill",
+    "email": "travis1897@gmail.com"
+  },
+  "metadata": {
+    "description": "Reflex 全端 Python web 開發進階 skill suite（互補官方 reflex-dev/agent-skills）",
+    "version": "0.3.0",
+    "homepage": "https://github.com/travisebill/reflex-mastery"
+  },
+  "plugins": [
+    {
+      "name": "reflex-docs-advanced",
+      "description": "Reflex 進階 framework 知識：architecture / patterns / pitfalls。Load when 寫進階 Reflex app、踩到 reactivity 問題、或要 scale state。",
+      "source": "./skills/reflex-docs-advanced",
+      "category": "framework",
+      "tags": ["reflex", "python", "fullstack", "patterns"]
+    },
+    {
+      "name": "reflex-deployment",
+      "description": "Reflex app 部署到 production：Vercel / Fly.io / Railway / Render / DigitalOcean / AWS / GCP / 自架 k8s + Docker + build.reflex.dev MCP。Load when 要 deploy Reflex app。",
+      "source": "./skills/reflex-deployment",
+      "category": "deployment",
+      "tags": ["reflex", "deploy", "docker", "vercel", "flyio", "k8s"]
+    },
+    {
+      "name": "reflex-ai-integration",
+      "description": "Reflex app 整合 AI SDK：minimax / OpenAI / Anthropic / Ollama，含 streaming response + token cost control。Load when 要在 Reflex app 內用 LLM。",
+      "source": "./skills/reflex-ai-integration",
+      "category": "ai",
+      "tags": ["reflex", "ai", "llm", "minimax", "openai", "anthropic", "ollama"]
+    },
+    {
+      "name": "reflex-ux-workflow",
+      "description": "Reflex app 與 ui-ux-pro-max skill 協作：design tokens → rx.theme() 對應、component 規格 → rx.* 對應、a11y checklist。Load when 要把 design 轉成 Reflex 實作。",
+      "source": "./skills/reflex-ux-workflow",
+      "category": "design",
+      "tags": ["reflex", "ux", "design", "a11y", "ui-ux-pro-max"]
+    },
+    {
+      "name": "reflex-upgrade-monitor",
+      "description": "Reflex 自動版本追蹤 + 升級指南。Load when 想知道 Reflex 最新版本、breaking changes、或要規劃升級。",
+      "source": "./skills/reflex-upgrade-monitor",
+      "category": "maintenance",
+      "tags": ["reflex", "upgrade", "version", "changelog"]
+    }
+  ]
+}
