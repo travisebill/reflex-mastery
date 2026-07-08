@@ -1,0 +1,26 @@
+{
+  "tracked_version": "0.9.6",
+  "last_check": "2026-07-09T01:30:00Z",
+  "last_release_checked": "v0.9.6.post1",
+  "last_update_from": "0.9.6",
+  "last_update_note": "Initial manifest",
+  "breaking_changes_since": [],
+  "upgrade_recommended": false,
+  "upgrade_available": true,
+  "auto_check_enabled": true,
+  "check_interval_days": 1,
+  "alert_thresholds": {
+    "patch": false,
+    "minor": true,
+    "major": true
+  },
+  "providers_checked": [
+    "pypi",
+    "github_releases"
+  ],
+  "notes": [
+    "Reflex 0.9.6 已在生產環境使用",
+    "等 1.0 stable 再升級 major",
+    "0.9.x 系列直接跟最新就行"
+  ]
+}
