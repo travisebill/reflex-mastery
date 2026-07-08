@@ -1,0 +1,9 @@
+reflex>=0.9.0
+sqlmodel>=0.0.16
+python-dotenv>=1.0.0
+# AI（可選）
+# minimax
+# openai
+# anthropic
+# Auth（可選）
+# supabase
